@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="icon" href="icons8-circled-m-100.png" type="image/gif">
+    <title>Manish Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active" id="MJ" >MJ</a>
+  <a href="#Accomplishments">Hobbies</a>
+  <a href="#inn">Accomplishments</a>
+  <a href="#hobbies">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+    <div class="header">
+        <h2>Resume</h2>
+      </div>
+
+      <div class="img-hover-zoom--blur" style="float: right;">
+        <img src="manish2.jpg" alt="My photo" width="150" height="150" class="center" />
+      </div>
+
+      <div class="info" id="inn">
+        <h2>Hi, I'm Manish</h2>
+        <h3>and i'm a C.S. student</h3>
+      </div>
+  
+<div class="columns">
+
+<div class="row">
+
+    <div class="firstcolumn">
+      <div class="card">
+        <h2 id="Accomplishments">My Accomplishments and other details -</h2>
+        <p> <li>I'm currently studying computer science and
+         pursuing my goal to be a developer, for that i'm doing B.C.A (Bachelor in Computer Application).</li></p>
+
+        <p><li>Checkout my java project and use a IDE or compiler to run it.    
+
+            <a href="https://drive.google.com/file/d/10w0_TG5Lt4NV0P6g65u5WoWYO1IGq6Tl/view?usp=drivesdk" class="button">Click here</li></a>
+        </p>
+        <p><li>Got 9.2 CGPA in X and 74% in Xll (commerce)
+            And in computer science got above 75% both year.</li></p>
+        </div>
+    </div>
+    <div class="middlecolumn">
+        <div class="card">
+          <h2 id="hobbies">My hobbies -</h2>
+          <ul>
+            <li>Exercising</li>
+            <li>Coding</li>
+            <li>Reading</li>
+            <li>Learning new stuff</li>
+            <li>Comfortable in both english and hindi.</li>
+        </ul>
+        </div>
+        </div>
+        <div class="lastcolumn">
+            <div class="card">
+                <h3 id="contact">Contact Me -</h3>
+    <p>(+91) 9928006062</p>
+    <p>manishsdlp222@gmail.com</p>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+        <div class="slideshow-container">
+
+          <div class="mySlides">
+            <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+            <p class="author">- John Keats</p>
+          </div>
+          
+          <div class="mySlides">
+            <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+            <p class="author">- Ernest Hemingway</p>
+          </div>
+          
+          <div class="mySlides">
+            <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+            <p class="author">- Thomas A. Edison</p>
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+          
+          </div>
+          
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+          
+        <!-- Javascript -->
+        <script>
+     
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+          </script>
+
+        <div class="footer">
+        <p id="about">About me</p>
+       <p></p>
+        </div>
+
+</body>
+</html>
